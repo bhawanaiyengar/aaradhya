@@ -1,0 +1,14 @@
+{
+  "name": "aaradhya",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix web-client run dev\"",
+    "server": "npm --prefix server run start",
+    "client": "npm --prefix web-client run dev",
+    "build": "npm --prefix web-client run build",
+    "preview": "npm --prefix web-client run preview"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
